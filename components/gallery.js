@@ -13,7 +13,7 @@ const Gallery = ({photos, setPhotoInfo}) => {
 
     return (
         <div>
-            <div className="grid grid-cols-2 grid-rows-14 grid-flow-row-dense gap-3 px-3 py-3 bg-yellow-200 md:grid-cols-3 md:px-6 md:py-6 lg:grid-cols-4 xl:grid-cols-5">
+            <div className="grid grid-cols-2 grid-rows-14 grid-flow-row-dense gap-3 px-3 py-3 bg-gray-200 md:grid-cols-3 md:px-6 md:py-6 lg:grid-cols-4 xl:grid-cols-5">
             {photos.map( item => {
                     return <div className={photoSpan(item)} onClick={() => {
                         setPhotoInfo([item.index, item.photo, item.size, item.country, item.city, item.location, item.location, item.description])
