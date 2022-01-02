@@ -1,8 +1,8 @@
-import Image from "next/image"
+import Image from 'next/image';
 
 const Gallery = ({photos, setPhotoInfo}) => {
     const photoSpan = (photo) => {
-        if (photo.size === 'large'){
+        if (photo.size === 'large') {
             return 'photoGallery row-span-2 flex justify-center'
         } else if (photo.size === 'panoramic') {
             return 'photoGallery col-span-2 row-span-2 flex justify-center'
@@ -13,10 +13,10 @@ const Gallery = ({photos, setPhotoInfo}) => {
 
     return (
         <div>
-            <div className="grid grid-cols-2 grid-rows-14 grid-flow-row-dense gap-3 px-3 py-3 bg-gray-200 md:grid-cols-3 md:px-6 md:py-6 lg:grid-cols-4 xl:grid-cols-5">
-            {photos.map( item => {
+            <div className='grid grid-cols-2 grid-rows-14 grid-flow-row-dense gap-3 px-3 py-3 md:grid-cols-3 md:px-6 md:py-6 lg:grid-cols-4 xl:grid-cols-5'>
+                {photos.map( item => {
                     return <div className={photoSpan(item)} onClick={() => {
-                        setPhotoInfo([item.index, item.photo, item.size, item.country, item.city, item.location, item.location, item.description])
+                        setPhotoInfo([item.index, item.photo, item.size, item.country, item.city, item.location, item.location, item.description]);
                     }} >
                             <Image 
                                 src={item.photo}

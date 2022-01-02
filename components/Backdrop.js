@@ -64,7 +64,7 @@ const Backdrop = ( {photoInfo, setPhotoInfo} ) => {
                                 <h1><span className='font-semibold'>City:</span>  {photoInfo[4]}</h1>
                                 <h1><span className='font-semibold'>Location:</span>  {photoInfo[5]}</h1>
                             </div>
-                            <div className='p-4 text-justify text-gray-900 bg-black-400 bg-opacity-90 h-2/3 overflow-y-auto scrollbar scrollbar-thumb-gray-300  scrollbar-thumb-rounded-full sm:h-3/4 lg:h-4/5'>
+                            <div className='p-4 text-justify text-white bg-gray-900 bg-opacity-70 h-2/3 overflow-y-auto scrollbar scrollbar-thumb-gray-300  scrollbar-thumb-rounded-full sm:h-3/4 lg:h-4/5'>
                             <p className='mr-3'>{photoInfo[7]}</p>
                             </div>
                         </div>

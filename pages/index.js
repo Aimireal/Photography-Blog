@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
-import Header from '../components/Header'
+import Header from '../components/header/Header'
 import Footer from '../components/Footer'
 import styles from '../styles/Home.module.css'
 
@@ -45,8 +45,8 @@ function Plane(props) {
     >
       <path
         d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
-        fill="#FDE68A"
-        stroke="#FBBF24"
+        fill="#007991"
+        stroke="#00a4c4"
         strokeWidth="2"
         />
       </svg>
