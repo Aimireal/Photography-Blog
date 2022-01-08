@@ -108,6 +108,10 @@
   margin-left: 0.5rem;
 }
 
+.Home_description__41Owk {
+  color: grey;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
